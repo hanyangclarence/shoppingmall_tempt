@@ -851,7 +851,7 @@
   justify-content: center;
 }
 
-.admin-page-product-add-container {
+.admin-page-main-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -860,7 +860,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.admin-page-product-add-container1 {
+.admin-page-main-container1 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -870,7 +870,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.admin-page-product-add-container2 {
+.admin-page-main-container2 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -878,7 +878,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.admin-page-product-add-text {
+.admin-page-main-text {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;

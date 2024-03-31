@@ -47,6 +47,14 @@
   margin-right: 0px;
   margin-bottom: var(--dl-space-space-halfunit);
 }
+.admin-page-login-text1 {
+  color: var(--dl-color-pallet-warning);
+  height: auto;
+  font-size: 14px;
+  align-self: center;
+  margin-top: -8px;
+  margin-bottom: -10px;
+}
 .admin-page-login-container3 {
   height: 112px;
   display: flex;
@@ -94,7 +102,7 @@
   border-color: var(--dl-color-gray-500);
   border-width: 3px;
 }
-.admin-page-login-navlink {
+.admin-page-login-button {
   width: var(--dl-size-size-medium);
   display: flex;
   margin-top: var(--dl-space-space-halfunit);
@@ -104,9 +112,8 @@
   margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: row;
   justify-content: center;
-  text-decoration: none;
 }
-.admin-page-login-text1 {
+.admin-page-login-text2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 600;

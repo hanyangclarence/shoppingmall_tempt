@@ -1,12 +1,9 @@
- <div class="clear">
         </div>
+      </div>
     </div>
-    <div class="clear">
-    </div>
-    <div id="site_info">
-        <p>
-         &copy; Copyright <a href="http://www.nayem.xyz">Sup online Shopping</a>. All Rights Reserved.
-        </p>
-    </div>
-</body>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
 </html>

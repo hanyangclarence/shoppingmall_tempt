@@ -1,3 +1,14 @@
+<?php include '../classess/Adminlogin.php';?>
+<?php
+$al = new Adminlogin();
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $adminUser = $_POST['adminUser'];
+    $adminPassword = md5($_POST['adminPassword']);
+
+    $loginChk = $al->adminLogin($adminUser, $adminPassword);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,34 +66,51 @@
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
-      <link href="./admin-page-login.css" rel="stylesheet" />
-
+      <link href="./css/login.css" rel="stylesheet" />
+      
       <div class="admin-page-login-container">
         <div class="admin-page-login-container1">
-          <div class="admin-page-login-container2">
-            <span class="admin-page-login-text">Admin Login</span>
-            <div class="admin-page-login-container3">
-              <input
-                type="text"
-                id="aaa"
-                placeholder="Username"
-                class="admin-page-login-textinput input"
-              />
-              <input
-                type="text"
-                placeholder="Password"
-                class="admin-page-login-textinput1 input"
-              />
+          <form action="login.php" method="post">
+            <div class="admin-page-login-container2">
+
+            
+
+              <span class="admin-page-login-text">Admin Login</span>
+              
+              <span class="admin-page-login-text1">
+                <?php
+                  if (isset($loginChk)) {
+                      echo $loginChk;
+                  }
+                ?>
+              </span> 
+
+              <div class="admin-page-login-container3">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  name="adminUser"
+                  class="admin-page-login-textinput input"
+                />
+                <input
+                  type="text"
+                  placeholder="Password"
+                  name="adminPassword"
+                  class="admin-page-login-textinput1 input"
+                />
+              </div>
+
+              <button type="submit" class="admin-page-login-button button">
+                <span class="admin-page-login-text2">Login</span>
+              </button>
+
+            
+
             </div>
-            <a
-              href="admin-page-main.html"
-              class="admin-page-login-navlink button"
-            >
-              <span class="admin-page-login-text1">Login</span>
-            </a>
-          </div>
+          </form>
         </div>
       </div>
+      
     </div>
     <script
       defer=""
